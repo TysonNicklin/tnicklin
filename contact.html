@@ -1,0 +1,80 @@
+<!--Comment Header for my Website Tyson Nicklin Date validated Date tested 3/26/23-->
+
+
+<!contact html>
+<html>
+<head>
+	<title>Contact Us - Bicycle Shop</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/slicknav.css">
+<body>
+	<header>
+		<h1>Bicycle Shop</h1>
+		<nav id="nav-wrapper">
+			<nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+				<li><a href="checkout.html">Checkout</a></li>
+              </ul>
+		</nav>
+	</header>
+	
+	<body>
+		<h2>Contact Us</h2>
+		<p>Please feel free to contact us with any questions or concerns you may have. You can reach us by phone, email, or by filling out the form below.</p>
+		
+		<h3>Phone</h3>
+		<p>Call us at 555-1234 during our business hours:</p>
+		<ul>
+			<li>Monday-Friday: 9am-6pm</li>
+			<li>Saturday: 10am-4pm</li>
+			<li>Sunday: 10am-6pm</li>
+		</ul>
+		
+		<h3>Email</h3>
+		<p>Email us at <a href-"emailto:owner@mpc.com">owner@nicklinbicycles.com</a> and we'll get back to you as soon as possible.</p>
+		
+		<h3>Contact Form</h3>
+		<form action="submit-form.php" method="post">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone">
+			
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+			
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+	
+	<footer>
+		<p>Store Address:
+
+            Nicklin's Bicycles
+            1234 Candy Cane lane 
+            West Frankfort
+            IL, 62896
+        </p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<script src="CSS/jquery.slicknav.js">
+	</script>
+	<script>
+		$(function(){
+			$('#menu').slicknav();
+		});
+	</script>
+
+</body>
+</html>

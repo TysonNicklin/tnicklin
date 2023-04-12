@@ -1,0 +1,46 @@
+<!-- Comment Header for my Website Tyson Nicklin Date validated Date tested 3/26/23 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bicycle Shop - Confirmation</title>
+	<link rel="stylesheet" type="text/css" href="Css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/slicknav.css">
+</head>
+<body>
+<header>
+    <h1>Confirmation</h1>
+    <nav id="nav-wrapper">
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </nav>
+</header>
+
+<div class="confirmation-wrapper">
+	<h2>Thank you for your purchase!</h2>
+	<p>Your order has been received and is being processed. A confirmation email has been sent to the email address you provided. Please allow 2-3 business days for processing and delivery. </p>
+
+	<h3>Order Details</h3>
+	<p><strong>Name: </strong><?php echo $_GET["name"]; ?></p>
+	<p><strong>Email: </strong><?php echo $_GET["email"]; ?></p>
+	<p><strong>Address: </strong><?php echo $_GET["address"]; ?></p>
+	<p><strong>City: </strong><?php echo $_GET["city"]; ?></p>
+	<p><strong>State: </strong><?php echo $_GET["state"]; ?></p>
+	<p><strong>ZIP Code: </strong><?php echo $_GET["zip"]; ?></p>
+	<p><strong>Phone: </strong><?php echo $_GET["phone"]; ?></p>
+	<p><strong>Creation Date: </strong><?php echo $_GET["creation-date"]; ?></p>
+	<p><strong>Order Total: </strong>$<?php echo $_GET["order-total"]; ?></p>
+</div>
+
+<footer>
+	<p>&copy; Bicycle Shop 2023</p>
+</footer>
+</body>
+</html>
